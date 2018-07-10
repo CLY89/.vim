@@ -10,3 +10,7 @@ set pumheight=10
 
 filetype plugin on
 syntax on
+
+if filereadable(expand($HOME . '.local/vimrc_local'))
+	source $HOME . '.local/vimrc_local'
+endif
