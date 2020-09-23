@@ -1,15 +1,26 @@
 [[plugins]]
-repo = 'cespare/vim-toml'
-on_ft = 'toml'
+repo = "cespare/vim-toml"
+on_ft = "toml"
 
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
-hook_post_source = '''
-    let g:deoplete#enable_at_startup = 1
+repo = "Shougo/deoplete.nvim"
+on_event = "InsertEnter"
+hook_add = '''
+    let g:deoplete#enable_at_startup=1
+    set completeopt-=preview
 '''
 
 [[plugins]]
-repo = 'Shougo/neosnippet.vim'
+repo = "Shougo/neosnippet.vim"
+on_event = "InsertEnter"
+hook_add = '''
+    imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+    smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+    xmap <C-k>     <Plug>(neosnippet_expand_target)
+    smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+    \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+'''
 
 [[plugins]]
-repo = 'Shougo/neosnippet-snippets'
+repo = "Shougo/neosnippet-snippets"
+on_event = "InsertEnter"
