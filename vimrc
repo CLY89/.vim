@@ -24,12 +24,13 @@ if &compatible
     set nocompatible
 endif
 
-set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=$HOME/.vim/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('~/.vim/dein')
-        call dein#begin('~/.vim/dein')
+let s:dein_dir = $HOME . '/.vim/dein'
+if dein#load_state(s:dein_dir)
+        call dein#begin(s:dein_dir)
 
-        let s:toml_dir  = '~/.vim/toml/'
+        let s:toml_dir  = $HOME . '/.vim/toml/'
         let s:toml      = s:toml_dir . '/dein.toml'
         let s:lazy_toml = s:toml_dir . '/dein_lazy.toml'
 
