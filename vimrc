@@ -15,9 +15,10 @@ set smartindent
 set wildmenu
 set pumheight=10
 set helplang=ja
+set cmdheight=2
 
 if filereadable(expand($HOME . '.local/vimrc_local'))
-	source $HOME . '.local/vimrc_local'
+    source $HOME . '.local/vimrc_local'
 endif
 
 if &compatible
@@ -28,17 +29,17 @@ set runtimepath+=$HOME/.vim/dein/repos/github.com/Shougo/dein.vim
 
 let s:dein_dir = $HOME . '/.vim/dein'
 if dein#load_state(s:dein_dir)
-        call dein#begin(s:dein_dir)
+    call dein#begin(s:dein_dir)
 
-        let s:toml_dir  = $HOME . '/.vim/toml/'
-        let s:toml      = s:toml_dir . '/dein.toml'
-        let s:lazy_toml = s:toml_dir . '/dein_lazy.toml'
+    let s:toml_dir  = $HOME . '/.vim/toml/'
+    let s:toml      = s:toml_dir . '/dein.toml'
+    let s:lazy_toml = s:toml_dir . '/dein_lazy.toml'
 
-        call dein#load_toml(s:toml,      {'lazy': 0})
-        call dein#load_toml(s:lazy_toml, {'lazy': 1})
+    call dein#load_toml(s:toml,      {'lazy': 0})
+    call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
-        call dein#end()
-        call dein#save_state()
+    call dein#end()
+    call dein#save_state()
 endif
 
 filetype plugin indent on
