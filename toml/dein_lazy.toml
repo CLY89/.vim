@@ -1,8 +1,4 @@
 [[plugins]]
-repo = ""
-on_event = "VimEnter"
-
-[[plugins]]
 repo = "Shougo/deoplete.nvim"
 on_event = "InsertEnter"
 hook_add = '''
@@ -24,6 +20,39 @@ hook_add = '''
 [[plugins]]
 repo = "Shougo/neosnippet-snippets"
 on_event = "InsertEnter"
+
+[[plugins]]
+repo = "neoclide/coc.nvim"
+rev = "release"
+on_ft = "scala"
+hook_add = '''
+    au BufRead,BufNewFile *.sbt,*.sc set filetype=scala
+
+    inoremap <silent><expr> <TAB>
+        \ pumvisible() ? "\<C-n>" :
+        \ <SID>check_back_space() ? "\<TAB>" :
+        \ coc#refresh()
+    inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+    function! s:check_back_space() abort
+      let col = col('.') - 1
+      return !col || getline('.')[col - 1]  =~# '\s'
+    endfunction
+
+    inoremap <silent><expr> <c-space> coc#refresh()
+
+    if has('nvim')
+      inoremap <silent><expr> <c-space> coc#refresh()
+    else
+      inoremap <silent><expr> <c-@> coc#refresh()
+    endif
+
+    if exists('*complete_info')
+      inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+    else
+      inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+    endif
+'''
 
 [[plugins]]
 repo = "cespare/vim-toml"
