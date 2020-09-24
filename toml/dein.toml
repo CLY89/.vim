@@ -29,4 +29,7 @@ if = "!has('nvim')"
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
+repo = "preservim/nerdtree"
+
+[[plugins]]
 repo = "vim-jp/vimdoc-ja"
