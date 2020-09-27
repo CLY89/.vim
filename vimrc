@@ -10,6 +10,7 @@ set autoread
 set autowriteall
 set expandtab
 set incsearch
+set infercase
 set showcmd
 set smartindent
 set wildmenu
