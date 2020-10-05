@@ -17,6 +17,7 @@ set wildmenu
 set pumheight=10
 set helplang=ja
 set cmdheight=2
+set fileencoding=utf-8
 
 if filereadable(expand($HOME . '.local/vimrc_local'))
     source $HOME . '.local/vimrc_local'
