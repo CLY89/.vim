@@ -75,6 +75,7 @@ repo = "prabirshrestha/asyncomplete-lsp.vim"
 
 [[plugins]]
 repo = "Shougo/neosnippet.vim"
+depends = "neosnippet-snippets"
 hook_add = '''
     imap <C-k>     <Plug>(neosnippet_expand_or_jump)
     smap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -92,14 +93,4 @@ hook_add = '''
          \ 'allowlist': ['*'],
          \ 'completor': function('asyncomplete#sources#neosnippet#completor'),
          \ }))
-'''
-[[plugins]]
-repo = "laixintao/asyncomplete-gitcommit"
-hook_add = '''
-    au User asyncomplete_setup call asyncomplete#register_source({
-            \ 'name': 'gitcommit',
-            \ 'whitelist': ['gitcommit'],
-            \ 'priority': 10,
-            \ 'completor': function('asyncomplete#sources#gitcommit#completor')
-            \ })
 '''
