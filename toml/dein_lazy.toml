@@ -1,3 +1,14 @@
 [[plugins]]
 repo = "cespare/vim-toml"
 on_ft = "toml"
+
+[[plugins]]
+repo = "clojure-vim/async-clj-omni"
+on_ft = "clojure"
+hook_add = '''
+    au User asyncomplete_setup call asyncomplete#register_source({
+            \ 'name': 'async_clj_omni',
+            \ 'whitelist': ['clojure'],
+            \ 'completor': function('async_clj_omni#sources#complete'),
+            \ })
+'''
