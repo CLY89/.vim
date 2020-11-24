@@ -32,6 +32,9 @@ repo = 'tpope/vim-fugitive'
 repo = "preservim/nerdtree"
 
 [[plugins]]
+repo = "ryanoasis/vim-devicons"
+
+[[plugins]]
 repo = "vim-jp/vimdoc-ja"
 
 [[plugins]]
