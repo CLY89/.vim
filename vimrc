@@ -1,24 +1,25 @@
-set hidden
-set nobackup
-set nowritebackup
-set updatetime=300
-set shortmess+=c
-set secure
 set autoindent
-set shiftwidth=4
 set autoread
 set autowriteall
+set cmdheight=2
 set expandtab
+set fileencoding=utf-8
+set helplang=ja
+set hidden
 set incsearch
 set infercase
+set nobackup
+set nowritebackup
+set pumheight=10
+set secure
+set shiftwidth=4
+set shortmess+=c
 set showcmd
 set smartindent
+set tabstop=4
+set updatetime=300
 set wildmenu
-set pumheight=10
-set helplang=ja
-set cmdheight=2
-set fileencoding=utf-8
-
+  
 if filereadable(expand($HOME . '.local/vimrc_local'))
     source $HOME . '.local/vimrc_local'
 endif
