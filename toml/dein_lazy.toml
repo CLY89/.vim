@@ -12,3 +12,7 @@ hook_add = '''
             \ 'completor': function('async_clj_omni#sources#complete'),
             \ })
 '''
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+on_cmd = ['QuickRun']
