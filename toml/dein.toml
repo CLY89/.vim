@@ -26,9 +26,6 @@ repo = "roxma/vim-hug-neovim-rpc"
 if = "!has('nvim')"
 
 [[plugins]]
-repo = 'tpope/vim-fugitive'
-
-[[plugins]]
 repo = "preservim/nerdtree"
 
 [[plugins]]
