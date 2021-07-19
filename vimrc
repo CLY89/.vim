@@ -6,6 +6,7 @@ set expandtab
 set fileencoding=utf-8
 set helplang=ja
 set hidden
+set hlsearch
 set incsearch
 set infercase
 set nobackup
