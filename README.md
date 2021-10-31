@@ -12,6 +12,9 @@ Version 8.0 or above
 ```sh
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.vim/dein
+mkdir ~/.vim/toml
+touch ~/.vim/toml/dein.toml
+touch ~/.vim/toml/dein_lazy.toml
 ```
 
 ## License
