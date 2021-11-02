@@ -7,6 +7,7 @@ set fileencoding=utf-8
 set helplang=ja
 set hidden
 set hlsearch
+set ignorecase
 set incsearch
 set infercase
 set nobackup
