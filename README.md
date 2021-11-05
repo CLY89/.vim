@@ -37,4 +37,4 @@ on_ft = "toml"
 
 ## License
 
-MIT
+WTFPL
