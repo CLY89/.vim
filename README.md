@@ -28,6 +28,13 @@ hook_add = '''
 '''
 ```
 
+*Example (dein_lazy.toml)*
+```toml
+[[plugins]]
+repo = "cespare/vim-toml"
+on_ft = "toml"
+```
+
 ## License
 
 MIT
