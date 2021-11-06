@@ -1,3 +1,5 @@
+![license-WTFPL](https://img.shields.io/badge/license-WTFPL-green)
+
 ## .Vim - Vi Improved Run Commands
 
 This is my simple vim setup.
