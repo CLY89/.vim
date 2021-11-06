@@ -17,7 +17,7 @@ touch ~/.vim/toml/dein.toml
 touch ~/.vim/toml/dein_lazy.toml
 ```
 
-*Example (dein.toml)*
+**Examples : dein.toml**
 ```toml
 [[plugins]]
 repo = "vim-airline/vim-airline"
@@ -28,7 +28,7 @@ hook_add = '''
 '''
 ```
 
-*Example (dein_lazy.toml)*
+**Examples : dein_lazy.toml**
 ```toml
 [[plugins]]
 repo = "cespare/vim-toml"
