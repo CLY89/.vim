@@ -5,3 +5,7 @@ on_ft = "toml"
 [[plugins]]
 repo = "thinca/vim-quickrun"
 on_cmd = "QuickRun"
+
+[[plugins]]
+repo = "tpope/vim-surround"
+on_ft = ['html', 'xml']
