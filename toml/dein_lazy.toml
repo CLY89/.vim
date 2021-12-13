@@ -9,3 +9,7 @@ on_cmd = "QuickRun"
 [[plugins]]
 repo = "tpope/vim-surround"
 on_ft = ['html', 'xml', 'markdown', 'javascriptreact']
+
+[[plugins]]
+repo = "preservim/nerdtree"
+on_cmd = "NERDTree"

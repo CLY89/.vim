@@ -26,9 +26,6 @@ repo = "roxma/vim-hug-neovim-rpc"
 if = "!has('nvim')"
 
 [[plugins]]
-repo = "preservim/nerdtree"
-
-[[plugins]]
 repo = "ryanoasis/vim-devicons"
 
 [[plugins]]
