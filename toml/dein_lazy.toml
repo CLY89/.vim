@@ -8,4 +8,4 @@ on_cmd = "QuickRun"
 
 [[plugins]]
 repo = "tpope/vim-surround"
-on_ft = ['html', 'xml', 'markdown']
+on_ft = ['html', 'xml', 'markdown', 'javascriptreact']
