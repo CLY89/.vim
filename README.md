@@ -2,7 +2,7 @@
 
 ## .Vim - Vi Improved Run Commands
 
-This is my simple vim setup.
+This repository is configured for my vimrc.
 
 ## Require Vim Versions
 
