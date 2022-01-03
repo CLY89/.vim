@@ -92,3 +92,6 @@ hook_add = '''
          \ 'completor': function('asyncomplete#sources#neosnippet#completor'),
          \ }))
 '''
+
+[[plugins]]
+repo = "machakann/vim-sandwich"
