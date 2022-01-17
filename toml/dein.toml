@@ -16,6 +16,7 @@ hook_add = "let g:airline_theme='jellybeans'"
 [[plugins]]
 repo = "tomasr/molokai"
 hook_add = "colorscheme molokai"
+merged = 0
 
 [[plugins]]
 repo = "roxma/nvim-yarp"
@@ -30,6 +31,7 @@ repo = "ryanoasis/vim-devicons"
 
 [[plugins]]
 repo = "vim-jp/vimdoc-ja"
+merged = 0
 
 [[plugins]]
 repo = "prabirshrestha/vim-lsp"
