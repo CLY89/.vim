@@ -19,7 +19,7 @@ set shortmess+=c
 set showcmd
 set smartindent
 set tabstop=4
-set updatetime=200
+set updatetime=250
 set wildmenu
   
 if filereadable(expand($HOME . '.local/vimrc_local'))
