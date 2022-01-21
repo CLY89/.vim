@@ -18,6 +18,7 @@ set shiftwidth=4
 set shortmess+=c
 set showcmd
 set smartindent
+set smartcase
 set tabstop=4
 set updatetime=250
 set wildmenu
