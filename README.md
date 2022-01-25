@@ -1,4 +1,4 @@
-![Vim](https://img.shields.io/badge/-Vim-019733.svg?logo=vim&style=flat) ![license-WTFPL](https://img.shields.io/badge/license-WTFPL-green)
+![Vim](https://img.shields.io/badge/-Vim-019733.svg?logo=vim&style=flat) ![license-WTFPL](https://img.shields.io/badge/license-WTFPL-green) ![PRs-welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 
 ## .Vim - Vi Improved Run Commands
 
