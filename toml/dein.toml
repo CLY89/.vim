@@ -15,7 +15,6 @@ hook_add = "let g:airline_theme='jellybeans'"
 
 [[plugins]]
 repo = "tomasr/molokai"
-hook_add = "colorscheme molokai"
 merged = 0
 
 [[plugins]]

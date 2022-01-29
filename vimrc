@@ -50,5 +50,7 @@ if dein#check_install()
     call dein#install()
 endif
 
+colorscheme molokai
+
 filetype plugin indent on
 syntax enable
