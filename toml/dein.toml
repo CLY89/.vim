@@ -72,6 +72,17 @@ hook_add = '''
 repo = "prabirshrestha/asyncomplete-lsp.vim"
 
 [[plugins]]
+repo = "prabirshrestha/asyncomplete-neosnippet.vim"
+depends = "neosnippet"
+hook_add = '''
+    call asyncomplete#register_source(asyncomplete#sources#neosnippet#get_source_options({
+         \ 'name': 'neosnippet',
+         \ 'allowlist': ['*'],
+         \ 'completor': function('asyncomplete#sources#neosnippet#completor'),
+         \ }))
+'''
+
+[[plugins]]
 repo = "Shougo/neosnippet.vim"
 depends = "neosnippet-snippets"
 hook_add = '''
@@ -82,17 +93,6 @@ hook_add = '''
 
 [[plugins]]
 repo = "Shougo/neosnippet-snippets"
-
-[[plugins]]
-repo = "prabirshrestha/asyncomplete-neosnippet.vim"
-depends = "neosnippet"
-hook_add = '''
-    call asyncomplete#register_source(asyncomplete#sources#neosnippet#get_source_options({
-         \ 'name': 'neosnippet',
-         \ 'allowlist': ['*'],
-         \ 'completor': function('asyncomplete#sources#neosnippet#completor'),
-         \ }))
-'''
 
 [[plugins]]
 repo = "machakann/vim-sandwich"
