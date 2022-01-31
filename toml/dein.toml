@@ -2,22 +2,6 @@
 repo = "Shougo/dein.vim"
 
 [[plugins]]
-repo = "vim-airline/vim-airline"
-depends = "vim-airline-themes"
-hook_add = '''
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline#extensions#tabline#formatter = 'unique_tail'
-'''
-
-[[plugins]]
-repo = "vim-airline/vim-airline-themes"
-hook_add = "let g:airline_theme='jellybeans'"
-
-[[plugins]]
-repo = "tomasr/molokai"
-merged = 0
-
-[[plugins]]
 repo = "roxma/nvim-yarp"
 if = "!has('nvim')"
 
@@ -27,10 +11,6 @@ if = "!has('nvim')"
 
 [[plugins]]
 repo = "ryanoasis/vim-devicons"
-
-[[plugins]]
-repo = "vim-jp/vimdoc-ja"
-merged = 0
 
 [[plugins]]
 repo = "prabirshrestha/vim-lsp"
@@ -95,4 +75,25 @@ hook_add = '''
 repo = "Shougo/neosnippet-snippets"
 
 [[plugins]]
+repo = "vim-airline/vim-airline"
+depends = "vim-airline-themes"
+hook_add = '''
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#formatter = 'unique_tail'
+'''
+
+[[plugins]]
+repo = "vim-airline/vim-airline-themes"
+hook_add = "let g:airline_theme='jellybeans'"
+
+[[plugins]]
 repo = "machakann/vim-sandwich"
+
+[[plugins]]
+repo = "tomasr/molokai"
+merged = 0
+
+[[plugins]]
+repo = "vim-jp/vimdoc-ja"
+merged = 0
+
