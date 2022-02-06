@@ -4,7 +4,7 @@ on_ft = "toml"
 
 [[plugins]]
 repo = "tpope/vim-surround"
-on_ft = ['html', 'xml', 'markdown', 'javascriptreact']
+on_ft = ['html', 'xml', 'markdown', 'javascript', 'javascriptreact']
 
 [[plugins]]
 repo = "preservim/nerdtree"

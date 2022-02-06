@@ -87,9 +87,6 @@ repo = "vim-airline/vim-airline-themes"
 hook_add = "let g:airline_theme='jellybeans'"
 
 [[plugins]]
-repo = "machakann/vim-sandwich"
-
-[[plugins]]
 repo = "tomasr/molokai"
 merged = 0
 
