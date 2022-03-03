@@ -33,7 +33,7 @@ endif
 
 set runtimepath+=$HOME/.vim/dein/repos/github.com/Shougo/dein.vim
 
-let s:dein_dir = $HOME . '/.vim/dein'
+let s:dein_dir  = $HOME . '/.vim/dein'
 let s:toml_dir  = $HOME . '/.vim/toml'
 let s:toml      = s:toml_dir . '/dein.toml'
 let s:lazy_toml = s:toml_dir . '/dein_lazy.toml'
