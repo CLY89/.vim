@@ -21,6 +21,7 @@ set smartindent
 set smartcase
 set tabstop=4
 set updatetime=250
+set virtualedit=block
 set wildmenu
   
 if filereadable(expand($HOME . '.local/vimrc_local'))
