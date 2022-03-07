@@ -3,7 +3,7 @@ set autoread
 set autowriteall
 set cmdheight=2
 set expandtab
-set fileencoding=utf-8
+set encoding=utf-8
 set helplang=ja
 set hidden
 set hlsearch
