@@ -19,24 +19,6 @@ touch ~/.vim/toml/dein.toml
 touch ~/.vim/toml/dein_lazy.toml
 ```
 
-**Examples : dein.toml**
-```toml
-[[plugins]]
-repo = "vim-airline/vim-airline"
-depends = "vim-airline-themes"
-hook_add = '''
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline#extensions#tabline#formatter = 'unique_tail'
-'''
-```
-
-**Examples : dein_lazy.toml**
-```toml
-[[plugins]]
-repo = "cespare/vim-toml"
-on_ft = "toml"
-```
-
 ## License
 
 WTFPL
