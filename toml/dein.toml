@@ -87,11 +87,14 @@ hook_add = '''
 
 [[plugins]]
 repo = "vim-airline/vim-airline-themes"
-hook_add = "let g:airline_theme='jellybeans'"
+hook_add = "let g:airline_theme='everforest'"
 
 [[plugins]]
-repo = "tomasr/molokai"
-merged = 0
+repo = "sainnhe/everforest"
+hook_add = '''
+    let g:everforest_background = 'hard'
+    let g:everforest_better_performance = 1
+'''
 
 [[plugins]]
 repo = "vim-jp/vimdoc-ja"

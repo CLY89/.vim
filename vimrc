@@ -1,6 +1,7 @@
 set autoindent
 set autoread
 set autowriteall
+set background=dark
 set cmdheight=2
 set expandtab
 set encoding=utf-8
@@ -51,7 +52,7 @@ if dein#check_install()
     call dein#install()
 endif
 
-colorscheme molokai
+colorscheme everforest
 
 filetype plugin indent on
 syntax enable
