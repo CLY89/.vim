@@ -10,6 +10,3 @@ on_ft = ['html', 'xml', 'markdown', 'javascript', 'javascriptreact']
 repo = "MaxMEllon/vim-jsx-pretty"
 on_ft = ['javascript', 'javascriptreact']
 
-[[plugins]]
-repo = "preservim/nerdtree"
-on_cmd = "NERDTree"
