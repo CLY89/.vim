@@ -95,8 +95,12 @@ hook_add = '''
     let g:everforest_background = 'hard'
     let g:everforest_better_performance = 1
 '''
+
 [[plugins]]
 repo = "lambdalisue/fern.vim"
+
+[[plugins]]
+repo = "mattn/vim-sonictemplate"
 
 [[plugins]]
 repo = "vim-jp/vimdoc-ja"
