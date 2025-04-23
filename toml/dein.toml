@@ -78,6 +78,9 @@ hook_add = '''
 repo = "Shougo/neosnippet-snippets"
 
 [[plugins]]
+repo = 'Exafunction/codeium.vim'
+
+[[plugins]]
 repo = "vim-airline/vim-airline"
 depends = "vim-airline-themes"
 hook_add = '''
