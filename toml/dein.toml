@@ -100,12 +100,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = "lambdalisue/fern.vim"
-
-[[plugins]]
-repo = "mattn/vim-sonictemplate"
-
-[[plugins]]
 repo = "vim-jp/vimdoc-ja"
 merged = 0
 

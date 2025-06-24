@@ -7,6 +7,18 @@ repo = "tpope/vim-surround"
 on_ft = ['html', 'xml', 'markdown', 'javascript', 'javascriptreact']
 
 [[plugins]]
+repo = "lambdalisue/fern.vim"
+on_cmd = 'Fern'
+
+[[plugins]]
+repo = "tpope/vim-fugitive"
+on_cmd = ['G', 'Git']
+
+[[plugins]]
+repo = "mattn/vim-sonictemplate"
+on_cmd = 'Template'
+
+[[plugins]]
 repo = "MaxMEllon/vim-jsx-pretty"
 on_ft = ['javascript', 'javascriptreact']
 
