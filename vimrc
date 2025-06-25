@@ -25,8 +25,8 @@ set updatetime=250
 set virtualedit=block
 set wildmenu
   
-if filereadable(expand($HOME . '.local/vimrc_local'))
-    source $HOME . '.local/vimrc_local'
+if filereadable(expand($HOME . '/.local/vimrc_local'))
+    source $HOME . '/.local/vimrc_local'
 endif
 
 if &compatible
