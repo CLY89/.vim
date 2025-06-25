@@ -4,7 +4,7 @@
 
 This repository contains my personal Vim configuration file (`vimrc`).
 
-## Require Vim Versions
+## Required Vim Version
 
 Version 8.0 or above
 
