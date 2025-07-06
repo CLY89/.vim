@@ -12,7 +12,7 @@ Version 8.0 or above
 
 [dein.vim](https://github.com/Shougo/dein.vim)
 ```sh
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+wget https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh
 sh ./installer.sh ~/.vim/dein
 mkdir ~/.vim/toml
 touch ~/.vim/toml/dein.toml
