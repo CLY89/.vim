@@ -1,4 +1,6 @@
 .netrwhist
+.bak
+.tmp
 .lsp
 [._]*.un~
 dein
