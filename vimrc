@@ -1,38 +1,66 @@
-set autoindent
-set autoread
-set autowriteall
+"==============================================================================
+" Compatibility
+"==============================================================================
+if &compatible
+  set nocompatible
+endif
+
+"==============================================================================
+" Appearance
+"==============================================================================
 set background=dark
 set cmdheight=2
-set expandtab
-set encoding=utf-8
 set helplang=ja
-set hidden
+set pumheight=10
+set showcmd
+set wildmenu
+
+"==============================================================================
+" Searching
+"==============================================================================
 set hlsearch
 set ignorecase
 set incsearch
+set smartcase
+
+"==============================================================================
+" Editing / Indent
+"==============================================================================
+set autoindent
+set expandtab
 set infercase
+set shiftwidth=4
+set smartindent
+set tabstop=4
+set virtualedit=block
+
+"==============================================================================
+" File handling
+"==============================================================================
+set autoread
+set autowrite
+set encoding=utf-8
 set nobackup
 set nowritebackup
-set pumheight=10
-set secure
-set shiftwidth=4
 set shortmess+=c
-set showcmd
-set smartindent
-set smartcase
-set tabstop=4
+set nomodeline " Disable modeline for security
+
+"==============================================================================
+" Misc
+"==============================================================================
+set hidden
 set updatetime=250
-set virtualedit=block
-set wildmenu
-  
+
+"==============================================================================
+" Local vimrc
+"==============================================================================
 if filereadable(expand($HOME . '/.local/vimrc_local'))
     source $HOME . '/.local/vimrc_local'
 endif
 
-if &compatible
-    set nocompatible
-endif
-
+"==============================================================================
+" dein.vim - Plugin Manager
+"==============================================================================
 let s:dein_repo = expand('~/.vim/dein/repos/github.com/Shougo/dein.vim')
 if isdirectory(s:dein_repo)
     execute 'set runtimepath^=' . s:dein_repo
@@ -61,6 +89,8 @@ else
     echohl None
 endif
 
+"==============================================================================
+" Filetype settings
+"==============================================================================
 filetype plugin indent on
 syntax enable
-
